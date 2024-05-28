@@ -1,0 +1,431 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+  
+  body {
+    margin: 0 auto;
+    background-color: #FBF8F1;
+  }
+  
+  
+  .container::before,
+  .container::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: #565C45;
+  }
+  
+  .container::before {
+    left: 32px; 
+  }
+  
+  .container::after {
+    right: 32px; 
+  }
+  
+  .header__container {
+    padding: 0;
+  }
+
+  /* header */
+
+.header__logo {
+    margin-right: 224px;
+    width: 126px;
+    height: 66px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid #565C45;
+    align-items: center;
+    padding: 16px 100px;
+  }
+  
+  .nav__list {
+    display: flex; 
+    width: 55%;
+    justify-content: space-between; 
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav__text {
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: black;
+  }
+  
+  .buy__img { 
+    height: 46px;
+    width: 48px;
+    margin-right: 35px;
+  }
+  
+  .account__img {
+    height: 36px;
+    width: 36px;
+  }
+  
+  .nav__right {
+    display: flex; 
+    align-items: center;
+    margin-left: 224px;
+  }
+  
+  .submenu {
+    display: none;
+    padding: 22px 0 22px 19px;
+    position: absolute;
+    background-color: #FBF8F1;
+    z-index: 1000;
+  }
+  
+  .submenu-item {
+    font-family: "Montserrat";
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+    width: 283px;
+    height: 43px;
+  }
+  
+  .inner-submenu {
+    display: none;
+    padding: 22px 0 22px 19px;
+    position: absolute;
+    background-color: #FBF8F1;
+    z-index: 1000;
+    left: 100%;
+    top: 0;
+  }
+  
+  .submenu-cosmetics {
+    width: 320px;
+    height: 260px;
+  }
+  
+  .submenu-pyjamas {
+    width: 320px;
+    height: 170px;
+  }
+  
+  .inner-submenu-item {
+    text-align: left;
+    font-family: "Montserrat";
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+  
+  .inner-submenu-item:not(:last-child) {
+    padding-bottom: 25px;
+  }
+  
+  .submenu-item:hover .inner-submenu {
+    display: block;
+  }
+
+  /* catalog title */
+
+  .catalog__container {
+    background-image: url(../img/cosmetics__bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .catalog__title {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 450px 130px 450px;
+    position: relative;
+    text-align: center;
+  }
+
+  .cosmetics__title {
+    font-family: "Prata";
+    font-size: 64px;
+    color: white;
+  }
+
+  .cosmetics__descr {
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    text-align: left;
+  }
+
+   .icon {
+     position: absolute;
+     font-size: 30px;
+     color: #ffffff;
+  }
+    .sun {
+        top: 28%;
+        left: 5%;
+    }
+
+    .star {
+        top: 76%;
+        left: 7%;
+        width: 35px;
+        height: 43px;
+    }
+
+    .star2 {
+        top: 30%;
+        left: 3%;
+        width: 77px;
+        height: 95px;
+    }
+
+
+    /* cards */
+
+    .cards__text {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 65px;
+        align-items: center;
+    }
+
+    .cards__title {
+        font-family: "Montserrat";
+        font-size: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+
+      .filters {
+        display: inline-block;
+        position: relative;
+        border: 2px solid #565C45;
+        padding: 20px 70px 20px 20px;
+        width: 320px;
+        text-align: left;
+        font-family: "Montserrat";
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: #E9E9D7;
+        color: #565C45;
+      }
+
+      .filters::after {
+        content: "";
+        display: block;
+        width: 39px;
+        height: 3px;
+        background-color: #565C45;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-18px);
+    }
+
+     .line-2 {
+        position: absolute;
+        top: 50%;
+        right: 23px;
+        transform: translateY(-6px);
+        width: 32px;
+        height: 3px;
+        background-color: #565C45;
+    }
+    .line-3 {
+        position: absolute;
+        top: 50%;
+        right: 26px;
+        transform: translateY(6px);
+        width: 26px;
+        height: 3px;
+        background-color: #565C45;
+    }
+    .line-4 {
+        position: absolute;
+        top: 50%;
+        right: 29px;
+        transform: translateY(18px);
+        width: 20px;
+        height: 3px;
+        background-color: #565C45;
+    }
+
+    .cards-container {
+        padding: 150px 220px 200px 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        display: flex;
+        margin-top: 65px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        flex-basis: calc(25%);
+      }
+      
+      .card__pic {
+        max-width: 320px;
+        max-height: 384px;
+        padding-bottom: 30px;
+      }
+
+      .card__title {
+        font-size: 32px;
+        font-family: "Montserrat";
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+
+      
+      .price {
+        font-size: 32px;
+        font-family: "Montserrat";
+        font-weight: 400;
+        padding-bottom: 10px;
+      }
+      
+      .card__btn {
+        display: inline-block;
+        border: 1px solid #565C45;
+        padding: 20px 79px;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: #565C45;
+        color: #E9E9D7;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      }
+      
+      .card__btn:hover {
+        background-color: #E9E9D7;
+        color: #565C45;
+      }
+
+ /* footer */
+
+.footer-container {
+    display: flex;
+    padding: 120px 0 0 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .footer__title {
+    font-size: 96px;
+    font-family: "Prata";
+    color: white;
+  }
+  
+  .footer-line {
+    background-color: white;
+  }
+  
+  .footer-line::before,
+  .footer-line::after {
+    background-color: white;
+  }
+  
+  
+  .contact__info {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding-bottom: 200px;
+  }
+  
+  .contact__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact__item p {
+    font-size: 24px;
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  
+  .contact__item img.standard-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__text-container {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.7);;
+    width: 100%;
+  }
+  
+  .footer__logo {
+    margin-bottom: 25px;
+    width: 143px;
+    height: 74px;
+  }
+  
+  .footer__text {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+  }

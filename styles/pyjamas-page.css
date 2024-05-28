@@ -1,0 +1,374 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+  
+  body {
+    margin: 0 auto;
+    background-color: #565C45;
+  }
+  
+  
+  .container::before,
+  .container::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: #fff;
+  }
+  
+  .container::before {
+    left: 32px; 
+  }
+  
+  .container::after {
+    right: 32px; 
+  }
+  
+  .header__container {
+    padding: 0;
+  }
+
+  /* header */
+
+.header__logo {
+    margin-right: 224px;
+    width: 126px;
+    height: 66px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid #565C45;
+    align-items: center;
+    padding: 16px 100px;
+    background-color: #FBF8F1;
+  }
+  
+  .nav__list {
+    display: flex; 
+    width: 55%;
+    justify-content: space-between; 
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav__text {
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: black;
+  }
+  
+  .buy__img { 
+    height: 46px;
+    width: 48px;
+    margin-right: 35px;
+  }
+  
+  .account__img {
+    height: 36px;
+    width: 36px;
+  }
+  
+  .nav__right {
+    display: flex; 
+    align-items: center;
+    margin-left: 224px;
+  }
+  
+  .submenu {
+    display: none;
+    padding: 22px 0 22px 19px;
+    position: absolute;
+    background-color: #FBF8F1;
+    z-index: 1000;
+  }
+  
+  .submenu-item {
+    font-family: "Montserrat";
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+    width: 283px;
+    height: 43px;
+  }
+  
+  .inner-submenu {
+    display: none;
+    padding: 22px 0 22px 19px;
+    position: absolute;
+    background-color: #FBF8F1;
+    z-index: 1000;
+    left: 100%;
+    top: 0;
+  }
+  
+  .submenu-cosmetics {
+    width: 320px;
+    height: 260px;
+  }
+  
+  .submenu-pyjamas {
+    width: 320px;
+    height: 170px;
+  }
+  
+  .inner-submenu-item {
+    text-align: left;
+    font-family: "Montserrat";
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+  
+  .inner-submenu-item:not(:last-child) {
+    padding-bottom: 25px;
+  }
+  
+  .submenu-item:hover .inner-submenu {
+    display: block;
+  }
+
+    /* cards */
+
+    .cards__text {
+        display: flex;
+        justify-content: flex-start;
+        padding: 65px 0 0 125px;
+        align-items: center;
+    }
+
+    .cards__title {
+        font-family: "Montserrat";
+        font-size: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+    .cards-container {
+        padding: 150px 220px 200px 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      
+      .product__container {
+        display: flex;
+        padding: 64px 128px 130px 128px;
+        color: #ECE7DE;
+    }
+    
+    .image__section {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+    
+    .main__image {
+        width: 764px;
+        height: 704px;
+        background-color: #D9D9D9;
+        margin-right: 30px;
+    }
+    
+    .thumbnail__images {
+        display: flex;
+        margin-right: 60px;
+        flex-direction: column;
+        gap: 33px;
+    }
+    
+    .thumbnail {
+        width: 164px;
+        height: 151px;
+        background-color: #D9D9D9;
+    }
+    
+    .details__section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .details__title {
+        font-family: "Prata";
+        font-size: 48px;
+        margin-bottom: 65px;
+        text-align: center;
+    }
+    
+    .details__descr {
+        margin: 0;
+        font-family: "Montserrat";
+        font-size: 24px;
+        width: 640px;
+    }
+
+    .details__material {
+        margin: 60px 0;
+    }
+    
+    .sizes {
+        display: flex;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    
+    .size {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 600;
+        background-color: #E9E9D7;
+        color: #565C45;
+        width: 64px;
+        height: 63px;
+        cursor: pointer;
+    }
+
+    .cart-and-price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .add-to-cart {
+        margin-right: 120px;
+        font-family: "Montserrat";
+        font-size: 20px;
+        background-color: #E9E9D7;
+        color: #565C45;
+        padding: 20px 70px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .price {
+        font-family: "Montserrat";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+    }
+ /* footer */
+
+.footer-container {
+    display: flex;
+    padding: 120px 0 0 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .footer__title {
+    font-size: 96px;
+    font-family: "Prata";
+    color: white;
+  }
+  
+  .footer-line {
+    background-color: white;
+  }
+  
+  .footer-line::before,
+  .footer-line::after {
+    background-color: white;
+  }
+  
+  
+  .contact__info {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding-bottom: 200px;
+  }
+  
+  .contact__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact__item p {
+    font-size: 24px;
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  
+  .contact__item img.standard-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__text-container {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.7);;
+    width: 100%;
+  }
+  
+  .footer__logo {
+    margin-bottom: 25px;
+    width: 143px;
+    height: 74px;
+  }
+  
+  .footer__text {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+  }

@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+
+    .container::before,
+    .container::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 2px; 
+      background-color: #000;
+    }
+    
+    .container::before {
+      left: 30px; 
+    }
+    
+    .container::after {
+      right: 30px; 
+    }
+
+    .header__logo {
+        margin-right: 0;
+    }
+    
+    .header__container {
+      padding: 0;
+    }
+
+    .nav__list {
+        display: none;
+        flex-direction: column;
+        width: 40%;
+        background-color: #F0ECE6;
+        position: absolute;
+        top: 84px; 
+        right:30px;
+        padding: 0;
+    }
+    .nav__text {
+        border-bottom: 1px solid #CCC;
+        width: 100%;
+        text-align: left;
+        padding: 16px;
+    }
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__right {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .nav__list.active {
+        display: flex;
+    }
+    .submenu, .inner-submenu {
+        position: static;
+    }
+
+    .inner-submenu {
+        
+    }
+
+    .submenu-pyjamas {
+        height: 200px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* slogan */
+
+    .slogan-container {
+        background-position: center center;
+        padding: 100px 0;
+    }
+
+    .slogan__title {
+        font-size: 24px;
+        line-height: 2;
+        width: 352px;
+    }
+
+    .slogan__btns {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .catalog__link {
+        width: 280px;
+    }
+}

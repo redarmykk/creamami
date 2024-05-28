@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.M.I</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/pyjamas-page.css">
+      </head>
+      <header class="header">
+        <div class="container header__container line">
+            <nav class="nav">
+                <a href="#" class="header__logo">
+                    <img src="./img/logo-header.png" alt="" srcset="" class="header__logo">
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__text">
+                        <a href="#about__us" class="nav__link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav__text parent">
+                        <a href="#details" class="nav__link">
+                            Каталог
+                        </a>
+                        <ul class="submenu">
+                          <li class="submenu-item">
+                            <a href="./cosmetics-page.html">Косметика</a>
+                            <ul class="inner-submenu hide-submenu submenu-cosmetics">
+                                <li class="inner-submenu-item"><a href="#">Кремы</a></li>
+                                <li class="inner-submenu-item"><a href="#">Мыло</a></li>
+                                <li class="inner-submenu-item"><a href="#">Сыворотки</a></li>
+                                <li class="inner-submenu-item"><a href="#">Тоники</a></li>
+                                <li class="inner-submenu-item"><a href="#">Прочее</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Пижамы</a>
+                            <ul class="inner-submenu hide-submenu submenu-pyjamas">
+                                <li class="inner-submenu-item"><a href="#">Комплект "тройка"</a></li>
+                                <li class="inner-submenu-item"><a href="#">Комплект "двойка"</a></li>
+                                <li class="inner-submenu-item"><a href="#">Майки</a></li>
+                            </ul>
+                        </li>                    
+                        </ul>
+                    </li>
+                    <li class="nav__text">
+                        <a href="#show" class="nav__link">
+                            Наше шоу
+                        </a>
+                    </li>
+                    <li class="nav__text">
+                        <a href="#feedback" class="nav__link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav__text">
+                        <a href="#contacts" class="nav__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__right">
+                  <a href="" class="buy">
+                    <img src="./img/ShoppingCart.png" alt="" class="buy__img">
+                  </a>
+                  <a href="" class="account">
+                    <img src="./img/User.png" alt="" class="account__img">
+                  </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="container">
+                <div class="cards__text">
+                    <p class="cards__title">
+                        каталог > пижамы
+                    </p>
+                </div>
+                <div class="product__container">
+                    <div class="image__section">
+                        <div class="main__image"></div>
+                        <div class="thumbnail__images">
+                            <div class="thumbnail"></div>
+                            <div class="thumbnail"></div>
+                            <div class="thumbnail"></div>
+                            <div class="thumbnail"></div>
+                        </div>
+                    </div>
+                    <div class="details__section">
+                        <h2 class="details__title">
+                            Пижама "Название"
+                        </h2>
+                        <p class="details__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="details__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="details__descr details__material">Материал: хлопок 100%</p>
+                        <p class="details__descr">Размер:</p>
+                        <div class="sizes">
+                            <div class="size">S</div>
+                            <div class="size">M</div>
+                            <div class="size">L</div>
+                            <div class="size">XL</div>
+                            <div class="size">XXL</div>
+                        </div>
+                        <div class="cart-and-price">
+                            <button class="add-to-cart">В КОРЗИНУ</button>
+                            <p class="price">10.000 тг</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="container footer-container">
+          <h2 class="footer__title">
+            Контакты
+          </h2>
+          <div class="line-with-circles footer-line"></div>
+          <div class="contact__info">
+            <div class="contact__item">
+                <img src="img/footer-inst.png" alt="Instagram Icon" class="standard-icon">
+                <p>@cream.ami</p>
+            </div>
+            <div class="contact__item">
+                <img src="./img/footer-phone.png" alt="Phone Icon" class="standard-icon">
+                <p>+7 747 690 00 86</p>
+            </div>
+          </div>
+          <div class="footer__text-container">
+            <img src="./img/footer-logo.png" alt="" class="footer__logo">
+            <p class="footer__text">© 2024 A.M.I Cream. Все права защищены</p>
+          </div>
+        </div>
+      </footer>
+<body>
+     <script src="./js/script.js"></script>
+</body>
+</html>
