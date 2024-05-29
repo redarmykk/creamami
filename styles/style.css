@@ -320,7 +320,7 @@ body {
 /* cards */
 
 .cards-container {
-  padding: 250px 220px 0 220px;
+  padding: 250px 180px 0 180px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -340,6 +340,7 @@ body {
 }
 
 .card__title {
+  width: 95%;
   font-size: 32px;
   font-family: "Montserrat";
   font-weight: 600;
@@ -521,6 +522,14 @@ body {
 }
 
 .contact__item p {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.contact__item a {
   font-size: 24px;
   font-family: "Montserrat";
   color: white;

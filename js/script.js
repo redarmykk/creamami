@@ -59,6 +59,35 @@ const swiper = new Swiper('.swiper', {
         type: 'bullets',
         clickable: true,
       },
+
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          width: 300,
+          slidesPerGroup: 1,
+        },
+
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            width: 400,
+            slidesPerGroup: 2,
+        }},
+
+        1200: {
+            slidesPerGroup: 3,
+        },
+
+        1600: {
+            slidesPerGroup: 3,
+        },
+
+        1920: {
+            slidesPerGroup: 3,
+        }
+        
     
 
   });
