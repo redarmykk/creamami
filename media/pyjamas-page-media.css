@@ -78,131 +78,75 @@
         align-items: center;
     }
 
+    /* cards */
 
-    /* slogan */
-
-    .slogan-container {
-        background-position: center center;
-        padding: 100px 0;
+    .cards__text {
+        padding: 30px 45px 25px 45px;
     }
 
-    .slogan__title {
-        font-size: 24px;
-        line-height: 2;
-        width: 90%;
+    .cards__title {
+        font-size: 16px;
     }
 
-    .slogan__btns {
-        flex-direction: column;
-        padding: 0;
-    }
+    /* product */
 
-    .catalog__link {
-        width: 280px;
-    }
-
-    /* about */
-
-    .line-container {
-        width: 100%;
-    }
-
-    .about-container {
+    .product__container {
+        padding: 45px 10px;
         flex-direction: column;
     }
 
-    .about__left {
+    .image__section {
+        flex-direction: column;
+        margin-right: 0;
         align-items: center;
     }
 
-    .about__title {
-        font-size: 60px;
-        padding: 0;
+    .main__image {
+        width: 90%;
+        height: 310px;
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 
-    .line-with-circle {
-        width: 330px;
-    }
-
-    .about__text {
-        font-size: 20px;
-        width: 305px;
-    }
-
-    .italic {
-        font-size: 20px;
-    }
-
-    .about-text {
-        width: 305px;
-    }
-
-    .about-pic {
-        width: 400px;
-    }
-
-    .about__left {
+    .thumbnail__images {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 10px;
         margin-bottom: 20px;
     }
 
-    /* cards */
-
-    .cards-container {
-        padding: 68px 45px;
-        flex-wrap: wrap;
+    .thumbnail {
+        width: 64px;
+        height: 72px;
     }
 
-    .card__title {
-        font-size: 16px;
-        width: 155px;
+    /* details */
+
+    .details__title {
+        font-size: 24px;
+    }
+
+    .details__descr {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .cart-and-price {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .add-to-cart {
+        margin-right: 0;
     }
 
     .price {
-        font-size: 20px;
+        order: -1;
     }
 
-    .card__btn {
-        font-size: 15px;
-        padding: 5px 25px;
-        margin-bottom: 20px;
+    .sizes {
+        gap: 5px;
     }
-
-    .card__pic {
-        width: 155px;
-        height: 178px;
-    }
-
-    /* show */
-
-    .show-container {
-        padding: 0;
-        flex-direction: column;
-    }
-
-    .show__btn {
-        font-size: 15px;
-        padding: 10px 50px;
-        margin-bottom: 20px;
-    }
-
-    /* feedback */
-
-    .feedback-container {
-        padding: 0;
-    }
-
-    .feedback__title {
-        font-size: 64px;
-    }
-
-    .line-with-circles {
-        width: 60%;
-    }
-
-    .slider-container {
-        padding: 0 50px;
-    }
-
 
     /* footer */
 
@@ -280,7 +224,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
     .nav__right {
         display: none;
@@ -312,131 +256,75 @@
         align-items: center;
     }
 
+    /* cards */
 
-    /* slogan */
-
-    .slogan-container {
-        background-position: center center;
-        padding: 100px 0;
+    .cards__text {
+        padding: 30px 45px 25px 45px;
     }
 
-    .slogan__title {
-        font-size: 24px;
-        line-height: 2;
-        width: 90%;
+    .cards__title {
+        font-size: 16px;
     }
 
-    .slogan__btns {
-        flex-direction: column;
-        padding: 0;
-    }
+    /* product */
 
-    .catalog__link {
-        width: 280px;
-    }
-
-    /* about */
-
-    .line-container {
-        width: 100%;
-    }
-
-    .about-container {
+    .product__container {
+        padding: 45px 10px;
         flex-direction: column;
     }
 
-    .about__left {
+    .image__section {
+        flex-direction: column;
+        margin-right: 0;
         align-items: center;
     }
 
-    .about__title {
-        font-size: 64px;
-        padding: 0;
+    .main__image {
+        width: 400px;
+        height: 310px;
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 
-    .line-with-circle {
-        width: 350px;
-    }
-
-    .about__text {
-        font-size: 22px;
-        width: 80%px;
-    }
-
-    .italic {
-        font-size: 20px;
-    }
-
-    .about-text {
-        width: 80%;
-    }
-
-    .about-pic {
-        width: 80%;
-    }
-
-    .about__left {
+    .thumbnail__images {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 10px;
         margin-bottom: 20px;
     }
 
-    /* cards */
-
-    .cards-container {
-        padding: 68px 45px;
-        flex-wrap: wrap;
+    .thumbnail {
+        width: 64px;
+        height: 72px;
     }
 
-    .card__title {
-        font-size: 16px;
-        width: 155px;
+    /* details */
+
+    .details__section {
+        align-items: center;
+    }
+
+    .details__title {
+        font-size: 24px;
+    }
+
+    .details__descr {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .cart-and-price {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .add-to-cart {
+        margin-right: 0;
     }
 
     .price {
-        font-size: 20px;
+        order: -1;
     }
-
-    .card__btn {
-        font-size: 15px;
-        padding: 5px 25px;
-        margin-bottom: 20px;
-    }
-
-    .card__pic {
-        width: 155px;
-        height: 178px;
-    }
-
-    /* show */
-
-    .show-container {
-        padding: 0;
-        flex-direction: column;
-    }
-
-    .show__btn {
-        font-size: 15px;
-        padding: 10px 50px;
-        margin-bottom: 20px;
-    }
-
-    /* feedback */
-
-    .feedback-container {
-        padding-top: 64px;
-    }
-
-    .feedback__title {
-        font-size: 64px;
-    }
-
-    .line-with-circles {
-        width: 60%;
-    }
-
-    .slider-container {
-        padding: 0 50px;
-    }
-
 
     /* footer */
 
@@ -463,6 +351,7 @@
     .contact__item p {
         margin-bottom: 50px;
     }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -513,7 +402,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
     .nav__right {
         display: none;
@@ -545,133 +434,75 @@
         align-items: center;
     }
 
+    /* cards */
 
-    /* slogan */
-
-    .slogan-container {
-        background-position: center center;
-        padding: 100px 0;
+    .cards__text {
+        padding: 30px 45px 25px 45px;
     }
 
-    .slogan__title {
-        font-size: 24px;
-        line-height: 2;
-        width: 50%;
+    .cards__title {
+        font-size: 16px;
     }
 
-    .slogan__btns {
-        flex-direction: column;
-        padding: 0;
-    }
+    /* product */
 
-    .catalog__link {
-        width: 280px;
-    }
-
-    /* about */
-
-    .line-container {
-        width: 100%;
-    }
-
-    .about-container {
+    .product__container {
+        padding: 45px 10px;
         flex-direction: column;
     }
 
-    .about__left {
+    .image__section {
+        flex-direction: column;
+        margin-right: 0;
         align-items: center;
     }
 
-    .about__title {
-        font-size: 64px;
-        padding: 0;
+    .main__image {
+        width: 400px;
+        height: 310px;
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 
-    .line-with-circle {
-        width: 350px;
-    }
-
-    .about__text {
-        font-size: 22px;
-        width: 80%px;
-    }
-
-    .italic {
-        font-size: 20px;
-    }
-
-    .about-text {
-        width: 80%;
-    }
-
-    .about-pic {
-        width: 80%;
-    }
-
-    .about__left {
+    .thumbnail__images {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 10px;
         margin-bottom: 20px;
     }
 
-    /* cards */
-
-    .cards-container {
-        align-items: center;
-        gap: 20px;
-        padding: 68px 45px;
-        flex-wrap: wrap;
+    .thumbnail {
+        width: 64px;
+        height: 72px;
     }
 
-    .card__title {
-        font-size: 18px;
-        width: 155px;
+    /* details */
+
+    .details__section {
+        align-items: center;
+    }
+
+    .details__title {
+        font-size: 24px;
+    }
+
+    .details__descr {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .cart-and-price {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .add-to-cart {
+        margin-right: 0;
     }
 
     .price {
-        font-size: 22px;
+        order: -1;
     }
-
-    .card__btn {
-        font-size: 16px;
-        padding: 10px 45px;
-        margin-bottom: 20px;
-    }
-
-    .card__pic {
-        width: 200px;
-        height: 270px;
-    }
-
-    /* show */
-
-    .show-container {
-        padding: 0;
-        flex-direction: column;
-    }
-
-    .show__btn {
-        font-size: 15px;
-        padding: 10px 50px;
-        margin-bottom: 20px;
-    }
-
-    /* feedback */
-
-    .feedback-container {
-        padding-top: 64px;
-    }
-
-    .feedback__title {
-        font-size: 64px;
-    }
-
-    .line-with-circles {
-        width: 60%;
-    }
-
-    .slider-container {
-        padding: 0 50px;
-    }
-
 
     /* footer */
 
@@ -698,6 +529,7 @@
     .contact__item p {
         margin-bottom: 50px;
     }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -748,131 +580,75 @@
         height: 200px;
     }
 
+    /* cards */
 
-
-    /* slogan */
-
-    .slogan-container {
-        background-position: center center;
-        padding: 100px 50px;
+    .cards__text {
+        padding: 30px 45px 25px 45px;
     }
 
-    .slogan__title {
-        font-size: 24px;
-        line-height: 2;
-        width: 40%;
+    .cards__title {
+        font-size: 16px;
     }
 
-    .slogan__btns {
+    /* product */
 
-        padding: 0;
-    }
-
-    .catalog__link {
-        width: 280px;
-    }
-
-    /* about */
-
-    .line-container {
-        width: 100%;
-    }
-
-    /* .about-container {
+    .product__container {
+        padding: 45px 10px;
         flex-direction: column;
-    } */
+    }
 
-    .about__left {
+    .image__section {
+        flex-direction: column;
+        margin-right: 0;
         align-items: center;
-        width: 60%;
+    }
+
+    .main__image {
+        width: 600px;
+        height: 310px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .thumbnail__images {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 20px;
         margin-bottom: 20px;
     }
 
-    .about__title {
-        font-size: 64px;
-        padding: 0;
+    .thumbnail {
+        width: 75px;
+        height: 82px;
     }
 
-    .line-with-circle {
-        width: 800px;
+    /* details */
+
+    .details__section {
+        align-items: center;
     }
 
-    .about__text {
+    .details__title {
+        font-size: 26px;
+    }
+
+    .details__descr {
         font-size: 22px;
-        width: 100%;
-    }
-
-    .italic {
-        font-size: 20px;
-    }
-
-    .about-text {
         width: 80%;
     }
 
-    .about-pic {
-        width: 100%;
+    .cart-and-price {
+        flex-direction: column;
+        margin-top: 40px;
     }
 
-    /* cards */
-
-    .cards-container {
-        align-items: center;
-        gap: 20px;
-        padding: 68px 45px;
-        flex-wrap: wrap;
-    }
-
-    .card__title {
-        font-size: 20px;
-        width: 100%;
+    .add-to-cart {
+        margin-right: 0;
     }
 
     .price {
-        font-size: 24px;
+        order: -1;
     }
-
-    .card__btn {
-        font-size: 16px;
-        padding: 15px 55px;
-        margin-bottom: 20px;
-    }
-
-    .card__pic {
-        width: 220px;
-        height: 310px;
-    }
-
-    /* show */
-
-    .show-container {
-        padding: 0;
-    }
-
-    .show__btn {
-        font-size: 16px;
-        padding: 20px 80px;
-        margin-bottom: 20px;
-    }
-
-    /* feedback */
-
-    .feedback-container {
-        padding-top: 64px;
-    }
-
-    .feedback__title {
-        font-size: 64px;
-    }
-
-    .line-with-circles {
-        width: 60%;
-    }
-
-    .slider-container {
-        padding: 0 50px;
-    }
-
 
     /* footer */
 
@@ -884,8 +660,12 @@
         font-size: 60px;
     }
 
+    .contact__info {
+        flex-direction: column;
+    }
+
     .footer__text {
-        width: 500px;
+        width: 240px;
     }
 
     .contact__info {
@@ -945,130 +725,67 @@
         height: 200px;
     }
 
+    /* cards */
 
-
-    /* slogan */
-
-    .slogan-container {
-        background-position: center center;
-        padding: 100px 50px;
+    .cards__text {
+        padding: 30px 45px 25px 45px;
     }
 
-    .slogan__title {
-        font-size: 36px;
-        line-height: 2;
-        width: 50%;
+    .cards__title {
+        font-size: 16px;
     }
 
-    .slogan__btns {
+    /* product */
 
-        padding: 0;
-    }
-
-    .catalog__link {
-        width: 280px;
-    }
-
-    /* about */
-
-    .line-container {
-        width: 100%;
-    }
-
-    /* .about-container {
+    .product__container {
+        padding: 45px 10px;
         flex-direction: column;
-    } */
+    }
 
-    .about__left {
+    .image__section {
+        flex-direction: column;
+        margin-right: 0;
         align-items: center;
-        width: 60%;
-        margin-bottom: 20px;
     }
 
-    .about__title {
-        font-size: 64px;
-        padding: 0;
+    .main__image {
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 
-    .line-with-circle {
-        width: 800px;
+    .thumbnail__images {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 20px;
+        margin-bottom: 50px;
     }
 
-    .about__text {
-        font-size: 22px;
-        width: 100%;
+
+    /* details */
+
+    .details__section {
+        align-items: center;
     }
 
-    .italic {
-        font-size: 20px;
+    .details__title {
+        font-size: 28px;
     }
 
-    .about-text {
+    .details__descr {
+        font-size: 26px;
         width: 80%;
     }
 
-    .about-pic {
-        width: 100%;
+    .cart-and-price {
+        margin-top: 40px;
     }
 
-    /* cards */
-
-    .cards-container {
-        align-items: center;
-        gap: 20px;
-        padding: 68px 45px;
-        flex-wrap: wrap;
+    .add-to-cart {
+        margin-right: 100px;
     }
 
-    .card__title {
-        font-size: 20px;
-        width: 100%;
-    }
+   
 
-    .price {
-        font-size: 24px;
-    }
-
-    .card__btn {
-        font-size: 16px;
-        padding: 15px 55px;
-        margin-bottom: 20px;
-    }
-
-    .card__pic {
-        width: 220px;
-        height: 310px;
-    }
-
-    /* show */
-
-    .show-container {
-        padding: 0;
-    }
-
-    .show__btn {
-        font-size: 16px;
-        padding: 20px 80px;
-        margin-bottom: 20px;
-    }
-
-    /* feedback */
-
-    .feedback-container {
-        padding-top: 64px;
-    }
-
-    .feedback__title {
-        font-size: 64px;
-    }
-
-    .line-with-circles {
-        width: 60%;
-    }
-
-    .slider-container {
-        padding: 0 50px;
-    }
 
 
     /* footer */
@@ -1093,8 +810,3 @@
         margin-bottom: 50px;
     }
 }
-
-
-
-
-

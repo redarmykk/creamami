@@ -168,12 +168,35 @@ html {
     display: block;
   }
 
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .desktop-only {
+    display: flex;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+
   /* catalog title */
 
   .catalog__container {
     background-image: url(../img/cosmetics__bg.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .catalog__title {
@@ -294,7 +317,7 @@ html {
     }
 
     .cards-container {
-        padding: 150px 220px 200px 220px;
+        padding: 150px 150px 200px 150px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

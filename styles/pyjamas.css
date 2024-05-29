@@ -169,6 +169,28 @@ html {
     display: block;
   }
 
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .desktop-only {
+    display: flex;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+
   /* catalog title */
 
   .catalog__container {
@@ -346,12 +368,11 @@ html {
         text-transform: uppercase;
         background-color: #E9E9D7;
         color: #565C45;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
       }
       
       .card__btn:hover {
-        background-color: #565C45;
-        color: #E9E9D7;
+        background-color: #C0C09D;
       }
 
  /* footer */
